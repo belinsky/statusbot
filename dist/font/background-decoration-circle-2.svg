@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "images/background-decoration-circle-2.svg";

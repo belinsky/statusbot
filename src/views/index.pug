@@ -1,0 +1,113 @@
+doctype html
+html
+  head(lang="ru")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width initial-scale=1")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,700;900&display=swap", rel="stylesheet")
+  body
+    section.information
+      .container
+        .row
+          .column
+            img.logo(src="../img/logo.png", alt="Meetup Bot")
+        .row
+          .column
+            h1.title Meetup-bot
+            p.description
+              | Избавит вас от формальных звонков,
+              br
+              | сэкономит ваше время и автоматизирует
+              br
+              | ежедневные  стендапы, рабочую деятельность
+              br
+              | и сбор информации по отделам.
+            .buttons 
+              a.button.slack(href="/")
+                img(src="../img/add-to-slack.png", alt="Добавить в Slack" role="link")
+              a.button(href="/")
+                span Авторизация
+          .column
+            img.intro(src="../img/intro.png", role="decoration")
+        .row
+          .column
+          .column
+            .hint
+              img.icon(src="../img/smiley-face.png", role="decoration")
+              p.text
+                | Первые два месяца
+                br
+                | абсолютно бесплатно
+    section.functionality
+      img.background-decoration-circle(src="../img/background-decoration-circle.svg", role="decoration",)
+      .container
+        h2.title Meetup-bot 
+          span.highlight в действии
+        .row 
+          .column
+            img(src="../img/action-1.png")
+          .column
+            p.description
+              | Каждый день в выбранное время бот
+              br
+              | задает сотрудникам важные
+              br
+              | вопросы, на которые им кратко
+              br
+              | нужно ответить
+        .row 
+          .column
+            p.description
+              | Все ответы сотрудников дублируются
+              br
+              | в отдельный канал в Slack, что
+              br
+              | повышает прозрачность в компании
+          .column
+            img(src="../img/action-2.png")
+        .row 
+          .column
+            img(src="../img/action-3.png")
+          .column
+            p.description
+              | Также вся история статусов навсегда
+              br
+              | будет сохранена в административной
+              br
+              | панели meetup-бота
+    section.features
+      .container
+        .feature-cards
+          .feature-card-wrapper
+            .feature-card
+              img.feature-card-icon(src="../img/features/meetups.png", alt="Митапы")
+              h5.title Митапы
+              p.description
+                | У вас несколько отделов в компании? Вы легко можете создать для каждого из них уникальные опросники, а затем получить отчет по каждой из выбранных групп.
+          .feature-card-wrapper
+            .feature-card
+              img.feature-card-icon(src="../img/features/reliability.png", alt="Надежность")
+              h5.title Надежность
+              p.description
+                | История статусов сохраняется навсегда, даже во время бесплатного периода, 
+                | и будет доступна при продлении платного периода.
+          .feature-card-wrapper
+            .feature-card
+              img.feature-card-icon(src="../img/features/flexibility.png", alt="Гибкость")
+              h5.title Гибкость
+              p.description
+                | Индивидуальная настройка вопросов для митапов и фильтрация их участников.
+          .feature-card-wrapper
+            .feature-card
+              img.feature-card-icon(src="../img/features/economy.png", alt="Экономия")
+              h5.title Экономия
+              p.description
+                | Бережет ваше время и деньги. Низкий ценник по истечении двух месяцев – 50 рублей за человека.
+          .feature-card-wrapper
+            .feature-card
+              img.feature-card-icon(src="../img/features/localized.png", alt="Полностью русифицированная версия")
+              h5.title Полностью русифицированная версия
+    section.summary
+      img.background-decoration-circle(src="../img/background-decoration-circle-2.svg", role="decoration",)
+      h2.title Попробуйте Meetup-bot уже сейчас!
+      a.button.slack(href="/")
+        img(src="../img/add-to-slack.png", alt="Добавить в Slack" role="link")
